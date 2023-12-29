@@ -1,0 +1,30 @@
+$bg-black:black;
+.banner{
+    background-color: $bg-black;
+    height: 400px;
+}
+.row{
+    padding: 1rem;
+    background-color: $bg-black;
+    >h2{
+        color: white;
+        font-weight: 300;
+    }
+    > div {
+        display: flex;
+        overflow-x: auto;
+    }
+    
+}
+.card{
+    width: 200px;
+    cursor: pointer;
+    margin: .5rem;
+    transition: transform 0.5s;
+    &:hover{
+        transform: translateY(-10px) scale(1.001);
+    }
+    > img {
+        max-width: 200px;
+    }
+}
