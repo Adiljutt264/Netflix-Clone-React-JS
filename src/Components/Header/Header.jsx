@@ -7,10 +7,10 @@ const Header = () => {
     <nav className='header'>
         <img src={logo} alt='logo'/>
         <div>
-            <Link to="/tvshows">Popular</Link>
-            <Link to="/tvshows">Top Rated</Link>
-            <Link to="/tvshows">Now Playing</Link>
-            <Link to="/tvshows">Up Coming</Link>
+            <Link to="/">Popular</Link>
+            <Link to="/">Top Rated</Link>
+            <Link to="/">Now Playing</Link>
+            <Link to="/">Up Coming</Link>
 
         </div>
         <ImSearch />

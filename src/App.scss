@@ -3,6 +3,9 @@ $bg-black:black;
     margin: 0%;
     padding: 0%;
     font-family: sans-serif;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 .header{
     background-color: $bg-black;
@@ -36,4 +39,14 @@ $bg-black:black;
     > svg:hover{
         color: rgb(221, 221, 221);
     }
+}
+.footer{
+    background-color: $bg-black;
+    padding: 2rem;
+    color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }

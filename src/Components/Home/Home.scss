@@ -1,7 +1,78 @@
 $bg-black:black;
-.banner{
+.home{
     background-color: $bg-black;
+    padding-bottom: 2rem;
+}
+.banner{
     height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    &::after{
+        width: 100%;
+        content: "";
+        height: 100%;
+        background-color: $bg-black;
+        opacity: 0.6;
+        position: absolute;
+        top: 0;
+    }
+     h1, p{
+        color: white;
+        font-size: 3.5rem;
+        width: 55%;
+        z-index: 9;
+        position: relative;
+        padding-left: 20px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-weight: 200;
+        width: 50%;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        button{
+            padding: .5rem 1rem;
+            width: 170px;
+            margin-left: 20px;
+            color: black;
+            font-weight: 300;
+            font-size: 1.3rem;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            position: relative;
+            z-index: 9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
+            &:nth-child(odd){
+                background-color: white;
+            }
+            &:nth-child(even){
+                background-color: #E70915;
+                color: white;
+            }
+            svg{
+                font-size: 1.7rem;
+                margin: 0 10px;
+            }
+        }
+    }
+
 }
 .row{
     padding: 1rem;
