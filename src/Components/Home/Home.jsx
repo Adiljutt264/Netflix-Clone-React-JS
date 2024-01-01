@@ -4,13 +4,13 @@ import axios from "axios";
 import banner from "../../netflix-banner.jpg";
 import {BiPlay} from "react-icons/bi"
 import {AiOutlinePlus} from "react-icons/ai"
-const apiKey = "860d10556aa36aee5ce1910ed9c73";
-const commonUrl = "https://api.themoviedb.org/3/movie/";
+const apiKey = process.env.REACT_APP_TMDB_KEY;
+const commonUrl = process.env.REACT_APP_TMDB_URL;
 const popular = "popular";
 const nowPlaying = "now_playing";
 const upComing = "upcoming";
 const topRated = "top_rated";
-const imgUrl = "https://image.tmdb.org/t/p/original/";
+const imgUrl = process.env.REACT_APP_IMG_URL;
 const Card = ({ img }) => (
   <div className="card">
     <img alt="cover" src={img} />
